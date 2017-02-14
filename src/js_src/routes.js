@@ -7,6 +7,7 @@ import Home from './containers/home';
 import Layout from './containers/layout';
 import Search from './containers/search';
 import GenePage from './containers/genePage';
+import Disease from './containers/disease';
 
 export default (
   <Route component={Layout} path='/'>
@@ -15,5 +16,6 @@ export default (
     <Route component={Help} path='help' />
     <Route component={Search} path='search' />
     <Route component={GenePage} path='gene/:geneId' />
+    <Route component={Disease} path='disease' />
   </Route>
 );
