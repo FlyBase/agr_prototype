@@ -81,6 +81,7 @@ def send_static(path):
 @app.route('/help')
 @app.route('/search')
 @app.route('/gene/<gene_id>')
+@app.route('/disease')
 def react_render(gene_id = None):
     return render_template('index.jinja2')
 
